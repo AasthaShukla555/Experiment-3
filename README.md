@@ -1,16 +1,44 @@
-# React + Vite
+1. Aim
+Implementing Routing in a Single Page Application (SPA)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+3. Theory
+In a traditional Multi-Page Application (MPA), clicking a link requests a new HTML file from the server, causing a visible refresh. In a Single Page Application (SPA), we use a routing library to intercept URL changes and swap components dynamically.
 
-Currently, two official plugins are available:
+Key Components Used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+BrowserRouter: A provider component that keeps your UI in sync with the URL using the HTML5 History API.
 
-## React Compiler
+Routes: A container that looks through all its child Route elements to find one whose path matches the current URL.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Route: Defines a mapping between a specific URL path (e.g., /cats) and the component that should render (e.g., <Cats />).
 
-## Expanding the ESLint configuration
+Link: Replaces the standard <a> tag. It allows users to navigate to different routes without triggering a browser reload, which is essential for the SPA experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Steps
+Installation: Install the routing library by running npm install react-router-dom.
+
+Configuration: In the main entry file (usually App.js or main.jsx), wrap the entire application in the <BrowserRouter> component.
+
+Defining Routes: Use the <Routes> container to wrap individual <Route /> definitions. Assign a path (like /dogs) and an element (the component name) to each.
+
+Creating Navigation: Implement a Navbar using the <Link> component to provide paths to the user.
+
+Component Integration:
+
+Map through animal data in Dogs.jsx and Cats.jsx.
+
+Style the gallery using Dogs.css for a grid layout.
+
+Interactive UI: Add an img-wrapper in the JSX to hold the image and a hidden description box that becomes visible (opacity: 1) on hover.
+
+4. Conclusion
+By utilizing react-router-dom, we successfully transformed a static React project into a functional SPA. The implementation of BrowserRouter, Routes, and Route allowed for instant page transitions, while the Link component maintained the application's state without a full page reload.
+
+5. Learning Outcomes
+Routing Logic: Mastered the ability to map URLs to specific UI components.
+
+SPA Navigation: Understood the difference between standard hyperlinking and client-side routing using the <Link> component.
+
+Layout Management: Learned how to maintain a consistent background and navbar while only swapping the gallery content.
+
+Data Rendering: Practiced mapping arrays of objects to generate dynamic interactive cards.
