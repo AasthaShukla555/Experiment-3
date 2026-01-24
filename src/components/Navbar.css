@@ -1,0 +1,34 @@
+/* Google Retro Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+.navbar {
+  position: fixed;          /* Background ke upar rahe */
+  top: 0;
+  left: 0;
+  width: 100%;
+  gap:50px;
+  padding: 15px 30px;
+
+  background: transparent;  /* Image dikhe */
+  z-index: 1000;             /* Upar layer */
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Retro font for Contact link */
+.nav-link {
+  color: #be2380;
+  text-decoration: none;
+  
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  font-family: 'Press Start 2P', system-ui;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  
+}

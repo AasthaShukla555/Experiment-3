@@ -1,0 +1,67 @@
+/* Google Retro Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
+/* Reset extra space */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Home page background */
+.home {
+  min-height: 100vh;
+  width: 100vw;
+
+  background-image: url("../assets/bg.png");
+  background-size: cover;        /* PURE PAGE COVER */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Retro title font */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 3px 3px 12px black;
+
+  font-family: 'Press Start 2P', system-ui;
+  text-transform: uppercase;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  gap: 100px;
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+/* Retro text for Cats & Doggies */
+.card p {
+  margin-top: 5px;
+  font-size: 4rem;
+  font-weight: 400;
+
+  color: #dd2eb4;
+  font-family: 'VT323', monospace;
+  letter-spacing: 2px;
+}
