@@ -2,7 +2,7 @@
 
 Implementing Routing in a Single Page Application (SPA)
 
-##2. **Theory**:-
+## 2. **Theory**:-
 
 In a traditional Multi-Page Application (MPA), clicking a link requests a new HTML file from the server, causing a visible refresh. In a Single Page Application (SPA), we use a routing library to intercept URL changes and swap components dynamically.
 
@@ -16,7 +16,7 @@ Route: Defines a mapping between a specific URL path (e.g., /cats) and the compo
 
 Link: Replaces the standard <a> tag. It allows users to navigate to different routes without triggering a browser reload, which is essential for the SPA experience.
 
-##3. **Steps**:-
+## 3. **Steps**:-
    
 Installation: Install the routing library by running npm install react-router-dom.
 
@@ -34,11 +34,11 @@ Style the gallery using Dogs.css for a grid layout.
 
 Interactive UI: Add an img-wrapper in the JSX to hold the image and a hidden description box that becomes visible (opacity: 1) on hover.
 
-##4. **Conclusion**:-
+## 4. **Conclusion**:-
    
 By utilizing react-router-dom, we successfully transformed a static React project into a functional SPA. The implementation of BrowserRouter, Routes, and Route allowed for instant page transitions, while the Link component maintained the application's state without a full page reload.
 
-##5. **Learning Outcomes**:-
+## 5. **Learning Outcomes**:-
    
 Routing Logic: Mastered the ability to map URLs to specific UI components.
 
